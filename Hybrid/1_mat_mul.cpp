@@ -12,6 +12,10 @@
 
 using namespace std;
 
+// Commands:
+// mpic++ 1_mat_mul.cpp -o mat_mul -fopenmp
+// mpirun -np 8 ./mat_mul
+
 int main(int argc, char *argv[]) {
     int numtasks, taskid, numworkers, source, dest, mtype, rows, averow, extra, offset, i, j, k, rc;
     double a[NRA][NCA], b[NCA][NCB], c[NRA][NCB],d[NRA][NCB];
